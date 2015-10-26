@@ -5,5 +5,3 @@ mkdir -p ~/.jconf && curl https://raw.githubusercontent.com/jdinhlife/jconf/mast
 if [ "$1" == "osx" ]; then
     curl https://raw.githubusercontent.com/jdinhlife/jconf/master/.jbashrc_osx -o ~/.jconf/.jbashrc_osx && sed -i.bak '/.jbashrc_osx/d' ~/.bashrc && echo "source ~/.jconf/.jbashrc_osx" >> ~/.bashrc
 fi
-
-. ~/.bashrc

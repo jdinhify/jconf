@@ -9,3 +9,7 @@ fi
 export NODE_PATH=`which node`:~/.nvm/versions/node/`node -v`/lib/node_modules
 rm ~/.bin/node
 ln -s `which node` ~/.bin/node
+rm ~/.bin/npm
+ln -s `which npm` ~/.bin/npm
+rm ~/.bin/bower
+ln -s `which bower` ~/.bin/bower

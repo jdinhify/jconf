@@ -30,4 +30,6 @@ function parse_git_branch {
 #     # PS1="\n\[$(tput setaf 2)\][\[$(tput setaf 7)\]\u \w\[$(tput setaf 2)\]]\n\[$(tput setaf 6)\]\t \[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 # }
 
-PS1="$magenta\u $reset@ $yellow\h $cyan[\t] $green\w$red\$(parse_git_branch)$reset\n$ "
+export HISTTIMEFORMAT="%d/%m/%y %T "
+
+export PS1="$magenta\u $reset@ $yellow\h $cyan[\t] $green\w$red\$(parse_git_branch)$reset\n$ "

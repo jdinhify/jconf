@@ -32,4 +32,6 @@ function parse_git_branch {
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
+export HISTFILESIZE=5200
+
 export PS1="$magenta\u $reset@ $yellow\h $cyan[\t] $green\w$red\$(parse_git_branch)$reset\n$ "

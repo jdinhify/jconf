@@ -45,7 +45,7 @@ If it's not working (as in the examples), it's possibly because you're using OSX
 `brew install git`
 
 ### trash cli
-`rm` will be aliased to `trash` which will move the files/folders to Trash bin (OSX) instead of permanently deleted. `ptrash` on CentOS would be have similar.
+`rm` will be aliased to `trash` which will move the files/folders to Trash bin (OSX) instead of permanently deleted. `ptrash` on CentOS would behave similarly.
 
 Install `trash`:
 

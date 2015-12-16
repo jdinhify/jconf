@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p ~/.jconf && curl https://raw.githubusercontent.com/jdinhlife/jconf/master/.bash_aliases -o ~/.jconf/.bash_aliases && curl https://raw.githubusercontent.com/jdinhlife/jconf/master/.jbashrc -o ~/.jconf/.jbashrc && sed -i.bak '/.bash_aliases/d' ~/.bashrc && sed -i.bak '/.jbashrc/d' ~/.bashrc && echo "source ~/.jconf/.bash_aliases" >> ~/.bashrc && echo "source ~/.jconf/.jbashrc" >> ~/.bashrc
+mkdir -p ~/.jconf && curl https://raw.githubusercontent.com/jdinhlife/jconf/master/.bash_aliases -o ~/.jconf/.bash_aliases && curl https://raw.githubusercontent.com/jdinhlife/jconf/master/.jbashrc -o ~/.jconf/.jbashrc && sed -i.bak '/.bash_aliases/d' ~/.bashrc && sed -i.bak '/.jbashrc/d' ~/.bashrc && echo "source ~/.jconf/.bash_aliases" >> ~/.bashrc && echo "source ~/.jconf/.jbashrc" >> ~/.bashrc && cp ~/.bashrc ~/.bash_profile
 
 if [ "$1" == "osx" ]; then
     curl https://raw.githubusercontent.com/jdinhlife/jconf/master/.jbashrc_osx -o ~/.jconf/.jbashrc_osx && sed -i.bak '/.jbashrc_osx/d' ~/.bashrc && echo "source ~/.jconf/.jbashrc_osx" >> ~/.bashrc

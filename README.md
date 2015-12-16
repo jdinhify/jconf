@@ -6,7 +6,7 @@ JD's bash
 curl https://raw.githubusercontent.com/jdinhlife/jconf/master/.jbash | bash ; source ~/.bash_profile
 ```
 
-## What's this doing?
+## What does this do?
 
  * provide a little enhancement for working with git (see examples)
 

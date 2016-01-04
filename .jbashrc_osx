@@ -7,9 +7,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 export NODE_PATH=`which node`:~/.nvm/versions/node/`node -v`/lib/node_modules
-rm ~/.bin/node
+/bin/rm ~/.bin/node
 ln -s `which node` ~/.bin/node
-rm ~/.bin/npm
+/bin/rm ~/.bin/npm
 ln -s `which npm` ~/.bin/npm
-rm ~/.bin/bower
+/bin/rm ~/.bin/bower
 ln -s `which bower` ~/.bin/bower

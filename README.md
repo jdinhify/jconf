@@ -3,7 +3,7 @@ JD's bash
 ## usage
 
 ```
-curl https://raw.githubusercontent.com/jdinhlife/jconf/master/.jbash | bash ; source ~/.bash_profile
+curl https://raw.githubusercontent.com/jdinhlife/jconf/master/.jbash | bash && source ~/.bash_profile
 ```
 
 ## What does this do?

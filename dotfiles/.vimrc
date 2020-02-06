@@ -28,7 +28,7 @@ call plug#end()
 
 set background=dark
 colorscheme gruvbox
-set guifont=RobotoMono-Light:h14
+set guifont=Inconsolata-Light:h16
 set guicursor=a:ver25
 
 

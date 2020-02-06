@@ -25,7 +25,7 @@ curl -fLo ~/.config/karabiner/karabiner.json --create-dirs https://raw.githubuse
 curl -fLo ~/.hyper.js https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.hyper.js &&
 curl -fLo ~/.phoenix.js https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.phoenix.js &&
 
-curl -fLo ~/Downloads/menumeter.zip https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/zips/MenuMeters_1.9.7.zip &&
+curl -fLo ~/Downloads/menumeter.zip https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/zips/MenuMeters_2.0.4.zip &&
 curl -fLo ~/Downloads/Inconsolata-Black.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Black.otf &&
 curl -fLo ~/Downloads/Inconsolata-Bold.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Bold.otf &&
 curl -fLo ~/Downloads/Inconsolata-Light.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Light.otf &&

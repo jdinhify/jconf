@@ -8,8 +8,18 @@ brew cask install 1password the-unarchiver alfred appcleaner karabiner-elements 
 
 cd &&
 
+# hyper font smoothing
+# similar for VSCode if needed, just replace co.zeit.hyper with com.microsoft.VSCode
+defaults write co.zeit.hyper CGFontRenderingFontSmoothingDisabled 0 &&
+defaults write co.zeit.hyper.helper CGFontRenderingFontSmoothingDisabled 0 &&
+defaults write co.zeit.hyper.helper.EH CGFontRenderingFontSmoothingDisabled 0 &&
+defaults write co.zeit.hyper.helper.NP CGFontRenderingFontSmoothingDisabled 0 &&
+
+# 3 finger drag
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -int 1 &&
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 1 &&
+
+# tap to click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1 &&
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1 &&
 

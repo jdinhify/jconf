@@ -11,7 +11,7 @@ Key.on("`", HYPER, () => {
   }
 })
 
-// option + `: show/hide Hyper
+// option + `: show/hide Hyper term
 Key.on("`", ["option"], () => {
   const app = App.focused()
 
@@ -36,7 +36,7 @@ Key.on("left", HYPER, () => {
   window && window.setFrame(newWindowFrame)
 })
 
-// HYPER + left: maximise right
+// HYPER + right: maximise right
 Key.on("right", HYPER, () => {
   const screenFrame = Screen.main().visibleFrame()
   const window = Window.focused()
@@ -50,14 +50,14 @@ Key.on("right", HYPER, () => {
   window && window.setFrame(newWindowFrame)
 })
 
-// HYPER + left: maximise
+// HYPER + up: maximise
 Key.on("up", HYPER, () => {
   const window = Window.focused()
 
   window && window.maximize()
 })
 
-// HYPER + left: center current window
+// HYPER + down: center current window
 Key.on("down", HYPER, () => {
   const screenFrame = Screen.main().visibleFrame()
   const window = Window.focused()

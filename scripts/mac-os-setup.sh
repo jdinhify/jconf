@@ -36,6 +36,9 @@ curl -fLo ~/.hyper.js https://raw.githubusercontent.com/jdinhify/jconf/master/do
 curl -fLo ~/.phoenix.js https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.phoenix.js &&
 
 curl -fLo ~/Downloads/menumeter.zip https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/zips/MenuMeters_2.0.4.zip &&
+curl -fLo ~/Downloads/brave-bookmarks.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/master/configs/alfred/brave-bookmarks.alfredworkflow &&
+curl -fLo ~/Downloads/gruvbox.alfredappearance https://raw.githubusercontent.com/jdinhify/jconf/master/configs/alfred/gruvbox.alfredappearance &&
+curl -fLo ~/Downloads/set-microphone-volume.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/master/configs/alfred/set-microphone-volume.alfredworkflow &&
 curl -fLo ~/Downloads/Inconsolata-Black.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Black.otf &&
 curl -fLo ~/Downloads/Inconsolata-Bold.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Bold.otf &&
 curl -fLo ~/Downloads/Inconsolata-Light.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Light.otf &&

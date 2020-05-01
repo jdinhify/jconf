@@ -5,7 +5,9 @@
   editor = code --wait
   autocrlf = false
   safecrlf = true
-  pager = diff-so-fancy | less --tabs=2 -RFX
+  pager = delta --plus-color="#0f4100" --minus-color="#650000" --theme='Dracula' --color-only
+[interactive]
+  diffFilter = delta --plus-color="#0f4100" --minus-color="#650000" --theme='Dracula' --color-only
 [color]
   status = auto
   branch = auto

@@ -1,7 +1,7 @@
 const HYPER = ["control", "shift", "command", "option"]
 
-// HYPER + `: show/hide VSCode
-Key.on("`", HYPER, () => {
+// option + `: show/hide VSCode
+Key.on("`", ["option"], () => {
   const app = App.focused()
 
   if (app && app.name() === "Code") {
@@ -11,8 +11,8 @@ Key.on("`", HYPER, () => {
   }
 })
 
-// option + `: show/hide Hyper term
-Key.on("`", ["option"], () => {
+// shift + option + `: show/hide Hyper term
+Key.on("`", ["shift", "option"], () => {
   const app = App.focused()
 
   if (app && app.name() === "Hyper") {

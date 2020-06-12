@@ -4,16 +4,9 @@
 
 brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep nvm zsh &&
 brew tap homebrew/homebrew-core &&
-brew cask install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code bettertouchtool vlc figma hyper google-backup-and-sync imageoptim phoenix itsycal obs openshot-video-editor brave-browser &&
+brew cask install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code vlc figma hyper google-backup-and-sync imageoptim phoenix itsycal obs openshot-video-editor brave-browser &&
 
 cd &&
-
-# hyper font smoothing
-# similar for VSCode if needed, just replace co.zeit.hyper with com.microsoft.VSCode
-defaults write co.zeit.hyper CGFontRenderingFontSmoothingDisabled 0 &&
-defaults write co.zeit.hyper.helper CGFontRenderingFontSmoothingDisabled 0 &&
-defaults write co.zeit.hyper.helper.EH CGFontRenderingFontSmoothingDisabled 0 &&
-defaults write co.zeit.hyper.helper.NP CGFontRenderingFontSmoothingDisabled 0 &&
 
 # 3 finger drag
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -int 1 &&
@@ -39,9 +32,5 @@ curl -fLo ~/Downloads/menumeter.zip https://member.ipmu.jp/yuji.tachikawa/MenuMe
 curl -fLo ~/Downloads/brave-bookmarks.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/master/configs/alfred/brave-bookmarks.alfredworkflow &&
 curl -fLo ~/Downloads/gruvbox.alfredappearance https://raw.githubusercontent.com/jdinhify/jconf/master/configs/alfred/gruvbox.alfredappearance &&
 curl -fLo ~/Downloads/set-microphone-volume.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/master/configs/alfred/set-microphone-volume.alfredworkflow &&
-curl -fLo ~/Downloads/Inconsolata-Black.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Black.otf &&
-curl -fLo ~/Downloads/Inconsolata-Bold.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Bold.otf &&
-curl -fLo ~/Downloads/Inconsolata-Light.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Light.otf &&
-curl -fLo ~/Downloads/Inconsolata-Medium.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Medium.otf &&
-curl -fLo ~/Downloads/Inconsolata-Regular.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-Regular.otf &&
-curl -fLo ~/Downloads/Inconsolata-SemiBold.otf https://github.com/googlefonts/Inconsolata/raw/master/fonts/otf/Inconsolata-SemiBold.otf
+curl -fLo ~/Downloads/InputMono-Light.ttf https://raw.githubusercontent.com/jdinhify/jconf/master/assets/InputMono-Light.ttf &&
+curl -fLo ~/Downloads/InputMono-Regular.ttf https://raw.githubusercontent.com/jdinhify/jconf/master/assets/InputMono-Regular.ttf

@@ -2,7 +2,7 @@
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" &&
 
-brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep nvm zsh &&
+brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep nvm &&
 brew tap homebrew/homebrew-core &&
 brew cask install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code vlc figma hyper google-backup-and-sync imageoptim phoenix itsycal obs openshot-video-editor brave-browser &&
 

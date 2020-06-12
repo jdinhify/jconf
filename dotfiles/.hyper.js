@@ -60,7 +60,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'InputMono-Light',
+    fontFamily: 'InputMono-Regular',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -112,18 +112,6 @@ module.exports = {
       }
     `,
 
-    // custom CSS to embed in the terminal window
-    termCSS: '',
-
-    // if you're using a Linux setup which show native menus, set to false
-    // default: `true` on Linux, `true` on Windows, ignored on macOS
-    showHamburgerMenu: '',
-
-    // set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons
-    // additionally, set to `'left'` if you want them on the left, like in Ubuntu
-    // default: `true` (without backticks and without quotes) on Windows and Linux, ignored on macOS
-    showWindowControls: '',
-
     // custom padding (CSS format, i.e.: `top right bottom left`)
     padding: '12px 14px',
 
@@ -131,27 +119,6 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: colors,
-
-    // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
-    //
-    // Windows
-    // - Make sure to use a full path if the binary name doesn't work
-    // - Remove `--login` in shellArgs
-    //
-    // Bash on Windows
-    // - Example: `C:\\Windows\\System32\\bash.exe`
-    //
-    // PowerShell on Windows
-    // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '',
-
-    // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
-    // by default `['--login']` will be used
-    shellArgs: ['--login'],
-
-    // for environment variables
-    env: {},
 
     // set to `false` for no bell
     bell: false,
@@ -166,24 +133,9 @@ module.exports = {
     // selection is present (`true` by default on Windows and disables the context menu feature)
     quickEdit: true,
 
-    // URL to custom bell
-    // bellSoundURL: 'http://example.com/bell.mp3',
-
+    shell: '/bin/zsh',
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
-
-  // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
-  plugins: [],
-
-  // in development, you can create a directory under
-  // `~/.hyper_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
-  localPlugins: [],
 
   keymaps: {
     "pane:next": "cmd+]",

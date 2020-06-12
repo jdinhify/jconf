@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env zsh
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" &&
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" &&
 
 brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep nvm &&
 brew tap homebrew/homebrew-core &&

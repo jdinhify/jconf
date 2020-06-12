@@ -56,7 +56,7 @@ alias dev='cd ~/dev'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias clearcache='sudo killall -HUP mDNSResponder'
-alias brew-upgrade="curl -sL https://raw.githubusercontent.com/jdinhify/jconf/main/scripts/brew-upgrade.sh | zsh /dev/stdin"
+alias brew-upgrade="curl -sL https://raw.githubusercontent.com/jdinhify/jconf/main/scripts/brew-upgrade.zsh | zsh /dev/stdin"
 
 alias docker-clean-all='docker images -q | xargs docker rmi'
 alias docker-clean-dangling='docker images -q -f dangling=true | xargs docker rmi'

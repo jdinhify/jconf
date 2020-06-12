@@ -16,21 +16,21 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 1 
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1 &&
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1 &&
 
-curl -fLo ~/.gitconfig https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.gitconfig &&
-curl -fLo ~/.zshrc https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.zshrc &&
-curl -fLo ~/.bashrc https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.bashrc &&
-curl -fLo ~/.bash_profile https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.bash_profile &&
-curl -fLo ~/.tmux.conf https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.tmux.conf &&
+curl -fLo ~/.gitconfig https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.gitconfig &&
+curl -fLo ~/.zshrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.zshrc &&
+curl -fLo ~/.bashrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.bashrc &&
+curl -fLo ~/.bash_profile https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.bash_profile &&
+curl -fLo ~/.tmux.conf https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.tmux.conf &&
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim &&
-curl -fLo ~/.vimrc https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.vimrc &&
-curl -fLo ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.config-nvim-init.vim &&
-curl -fLo ~/.config/karabiner/karabiner.json --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/master/configs/karabiner.json &&
-curl -fLo ~/.hyper.js https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.hyper.js &&
-curl -fLo ~/.phoenix.js https://raw.githubusercontent.com/jdinhify/jconf/master/dotfiles/.phoenix.js &&
+curl -fLo ~/.vimrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.vimrc &&
+curl -fLo ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.config-nvim-init.vim &&
+curl -fLo ~/.config/karabiner/karabiner.json --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/configs/karabiner.json &&
+curl -fLo ~/.hyper.js https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.hyper.js &&
+curl -fLo ~/.phoenix.js https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.phoenix.js &&
 
 curl -fLo ~/Downloads/menumeter.zip https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/zips/MenuMeters_2.0.4.zip &&
-curl -fLo ~/Downloads/brave-bookmarks.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/master/configs/alfred/brave-bookmarks.alfredworkflow &&
-curl -fLo ~/Downloads/gruvbox.alfredappearance https://raw.githubusercontent.com/jdinhify/jconf/master/configs/alfred/gruvbox.alfredappearance &&
-curl -fLo ~/Downloads/set-microphone-volume.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/master/configs/alfred/set-microphone-volume.alfredworkflow &&
-curl -fLo ~/Downloads/InputMono-Light.ttf https://raw.githubusercontent.com/jdinhify/jconf/master/assets/InputMono-Light.ttf &&
-curl -fLo ~/Downloads/InputMono-Regular.ttf https://raw.githubusercontent.com/jdinhify/jconf/master/assets/InputMono-Regular.ttf
+curl -fLo ~/Downloads/brave-bookmarks.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/main/configs/alfred/brave-bookmarks.alfredworkflow &&
+curl -fLo ~/Downloads/gruvbox.alfredappearance https://raw.githubusercontent.com/jdinhify/jconf/main/configs/alfred/gruvbox.alfredappearance &&
+curl -fLo ~/Downloads/set-microphone-volume.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/main/configs/alfred/set-microphone-volume.alfredworkflow &&
+curl -fLo ~/Downloads/InputMono-Light.ttf https://raw.githubusercontent.com/jdinhify/jconf/main/assets/InputMono-Light.ttf &&
+curl -fLo ~/Downloads/InputMono-Regular.ttf https://raw.githubusercontent.com/jdinhify/jconf/main/assets/InputMono-Regular.ttf

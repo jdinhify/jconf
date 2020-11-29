@@ -4,7 +4,7 @@
 
 brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep &&
 brew tap homebrew/homebrew-core &&
-brew cask install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code vlc figma hyper google-backup-and-sync imageoptim phoenix itsycal obs openshot-video-editor brave-browser &&
+brew install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code vlc figma hyper google-backup-and-sync imageoptim itsycal obs openshot-video-editor brave-browser bettertouchtool &&
 
 curl https://get.volta.sh | bash &&
 

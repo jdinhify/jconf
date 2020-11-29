@@ -67,7 +67,4 @@ export HOMEBREW_GITHUB_API_TOKEN="HOMEBREW_TOKEN"
 
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-
 eval $(thefuck --alias)

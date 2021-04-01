@@ -2,9 +2,15 @@
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep
 brew tap homebrew/homebrew-core
+git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
+git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
+
+# cli
+brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep
+# casks
 brew install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code vlc figma hyper google-backup-and-sync imageoptim itsycal obs openshot-video-editor brave-browser bettertouchtool
+
 
 curl https://get.volta.sh | bash
 
@@ -82,10 +88,6 @@ defaults write com.apple.dock springboard-show-duration -int 0
 # no open window animation
 defaults write -g NSAutomaticWindowAnimationsEnabled -int 0
 
-# Enable subpixel font rendering on non-Apple LCDs
-# Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
-defaults write NSGlobalDomain AppleFontSmoothing -int 1
-
 curl -fLo ~/.gitconfig https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.gitconfig
 curl -fLo ~/.zshrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.zshrc
 curl -fLo ~/.bashrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.bashrc
@@ -101,5 +103,3 @@ curl -fLo ~/Downloads/menumeter.zip https://member.ipmu.jp/yuji.tachikawa/MenuMe
 curl -fLo ~/Downloads/brave-bookmarks.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/main/configs/alfred/brave-bookmarks.alfredworkflow
 curl -fLo ~/Downloads/gruvbox.alfredappearance https://raw.githubusercontent.com/jdinhify/jconf/main/configs/alfred/gruvbox.alfredappearance
 curl -fLo ~/Downloads/set-microphone-volume.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/main/configs/alfred/set-microphone-volume.alfredworkflow
-curl -fLo ~/Downloads/InputMono-Light.ttf https://raw.githubusercontent.com/jdinhify/jconf/main/assets/InputMono-Light.ttf
-curl -fLo ~/Downloads/InputMono-Regular.ttf https://raw.githubusercontent.com/jdinhify/jconf/main/assets/InputMono-Regular.ttf

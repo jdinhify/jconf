@@ -76,9 +76,14 @@ defaults write com.apple.finder FinderSounds -int 0
 defaults write com.apple.finder _FXShowPosixPathInTitle -int 1
 
 # dock
+defaults write com.apple.dock autohide -int 1
 defaults write com.apple.dock autohide-delay -int 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 defaults write com.apple.dock mineffect -string scale
+defaults write com.apple.dock show-process-indicators -int 0
+defaults write com.apple.dock show-recents -int 0
+defaults write com.apple.dock launchanim -int 0
+defaults write com.apple.dock tilesize -int 16
 
 # launchpad - no animations
 defaults write com.apple.dock springboard-hide-duration -int 0
@@ -87,6 +92,9 @@ defaults write com.apple.dock springboard-show-duration -int 0
 
 # no open window animation
 defaults write -g NSAutomaticWindowAnimationsEnabled -int 0
+
+# double click to minimize
+defaults write -g AppleActionOnDoubleClick -string Minimize
 
 curl -fLo ~/.gitconfig https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.gitconfig
 curl -fLo ~/.zshrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.zshrc

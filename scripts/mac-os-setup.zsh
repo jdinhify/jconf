@@ -96,6 +96,9 @@ defaults write -g NSAutomaticWindowAnimationsEnabled -int 0
 # double click to minimize
 defaults write -g AppleActionOnDoubleClick -string Minimize
 
+# maximum scroll speed
+defaults write -g com.apple.trackpad.scrolling -int 1
+
 curl -fLo ~/.gitconfig https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.gitconfig
 curl -fLo ~/.zshrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.zshrc
 curl -fLo ~/.bashrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.bashrc

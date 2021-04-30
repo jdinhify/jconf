@@ -2,15 +2,10 @@
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew tap homebrew/homebrew-core
-git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
-git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
-
 # cli
 brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep
 # casks
 brew install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code vlc figma hyper google-backup-and-sync imageoptim itsycal obs openshot-video-editor brave-browser bettertouchtool
-
 
 curl https://get.volta.sh | bash
 

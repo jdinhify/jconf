@@ -70,7 +70,7 @@ defaults write com.apple.finder FinderSounds -int 0
 # finder show path in title
 defaults write com.apple.finder _FXShowPosixPathInTitle -int 1
 
-# dock
+# dock - disable most animations
 defaults write com.apple.dock autohide -int 1
 defaults write com.apple.dock autohide-delay -int 0
 defaults write com.apple.dock autohide-time-modifier -int 0
@@ -93,6 +93,12 @@ defaults write -g AppleActionOnDoubleClick -string Minimize
 
 # maximum scroll speed
 defaults write -g com.apple.trackpad.scrolling -int 1
+
+# spaces - disable animations & auto arrangement
+defaults write com.apple.universalaccess reduceMotion -int 1
+
+# disable auto arrange spaces
+defaults write com.apple.dock mru-spaces -int 0
 
 curl -fLo ~/.gitconfig https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.gitconfig
 curl -fLo ~/.zshrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.zshrc

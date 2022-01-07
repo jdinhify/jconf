@@ -63,8 +63,12 @@ alias docker-clean-dangling='docker images -q -f dangling=true | xargs docker rm
 alias docker-rm-all='docker ps -aq | xargs docker rm'
 alias docker-stop-all='docker ps -q | xargs docker stop'
 
+alias xcode-reinstall='sudo rm -rf /Library/Developer/CommandLineTools && xcode-select --install'
+
 export HOMEBREW_GITHUB_API_TOKEN="HOMEBREW_TOKEN"
 
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
+
+eval "$(fnm env --use-on-cd)"
 
 eval $(thefuck --alias)

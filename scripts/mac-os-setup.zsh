@@ -3,13 +3,9 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # cli
-brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep
+brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep fnm
 # casks
 brew install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code vlc figma hyper google-drive imageoptim itsycal obs openshot-video-editor brave-browser bettertouchtool
-
-curl https://get.volta.sh | bash
-
-cd
 
 # trackpad tap to click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1

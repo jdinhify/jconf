@@ -35,3 +35,5 @@
 [user]
   email = jdinhify@gmail.com
   name = jd
+[init]
+	defaultBranch = main

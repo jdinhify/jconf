@@ -48,7 +48,7 @@ alias ls='ls -G'
 alias ll='ls -lhG'
 alias la='ls -laG'
 alias rm='trash'
-alias gh='git hist'
+alias ghs='git hist'
 alias gm='git merge'
 alias gf='git fetch'
 alias grb='git rebase'
@@ -68,7 +68,5 @@ alias xcode-reinstall='sudo rm -rf /Library/Developer/CommandLineTools && xcode-
 export HOMEBREW_GITHUB_API_TOKEN="HOMEBREW_TOKEN"
 
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
-
-eval "$(fnm env --use-on-cd)"
 
 eval $(thefuck --alias)

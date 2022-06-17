@@ -3,7 +3,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # cli
-brew install git git-delta awscli trash ranger hub less tig thefuck vim neovim fzf ripgrep fnm
+brew install git git-delta trash ranger hub less tig thefuck vim neovim fzf ripgrep
 # casks
 brew install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code vlc figma hyper google-drive imageoptim itsycal obs openshot-video-editor brave-browser bettertouchtool
 
@@ -108,6 +108,5 @@ curl -fLo ~/.config/karabiner/karabiner.json --create-dirs https://raw.githubuse
 curl -fLo ~/.hyper.js https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.hyper.js
 
 curl -fLo ~/Downloads/menumeter.zip https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/zips/MenuMeters_latest.zip
-curl -fLo ~/Downloads/brave-bookmarks.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/main/configs/alfred/brave-bookmarks.alfredworkflow
 curl -fLo ~/Downloads/gruvbox.alfredappearance https://raw.githubusercontent.com/jdinhify/jconf/main/configs/alfred/gruvbox.alfredappearance
 curl -fLo ~/Downloads/set-microphone-volume.alfredworkflow https://raw.githubusercontent.com/jdinhify/jconf/main/configs/alfred/set-microphone-volume.alfredworkflow

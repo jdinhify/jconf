@@ -3,7 +3,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # cli
-brew install git git-delta trash ranger hub less tig thefuck vim neovim fzf ripgrep direnv
+brew install git git-delta trash ranger hub less tig thefuck vim neovim fzf ripgrep direnv asdf
 # casks
 brew install 1password the-unarchiver alfred appcleaner karabiner-elements visual-studio-code vlc figma hyper google-drive imageoptim itsycal obs openshot-video-editor brave-browser bettertouchtool
 

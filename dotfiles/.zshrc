@@ -70,3 +70,15 @@ export HOMEBREW_GITHUB_API_TOKEN="HOMEBREW_TOKEN"
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
 
 eval $(thefuck --alias)
+
+. /usr/local/opt/asdf/libexec/asdf.sh
+
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
+eval "$(direnv hook zsh)"

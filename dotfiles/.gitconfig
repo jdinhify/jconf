@@ -1,39 +1,36 @@
 [filter "media"]
-  clean = git-media-clean %f
-  smudge = git-media-smudge %f
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
 [core]
-  editor = code --wait
-  autocrlf = false
-  safecrlf = true
+	editor = code --wait
+	autocrlf = false
+	safecrlf = true
 [pager]
-  diff = delta
-  log = delta
-  reflog = delta
-  show = delta
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
 [interactive]
-  diffFilter = delta --color-only --features=interactive
+	diffFilter = delta --color-only --features=interactive
 [delta]
-  syntax-theme = gruvbox-dark
-  line-numbers = true
+	syntax-theme = gruvbox-dark
+	line-numbers = true
+	tabs = 2
 [color]
-  status = auto
-  branch = auto
-  interactive = auto
-  diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-  br = branch
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
 [pull]
-  ff = only
+	ff = only
 [push]
-  default = simple
+	default = simple
 [user]
-  email = jdinhify@gmail.com
-  name = jd
+	email = jdinhify@gmail.com
+	name = jd
 [init]
 	defaultBranch = main

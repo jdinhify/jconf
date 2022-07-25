@@ -71,7 +71,7 @@ export HOMEBREW_GITHUB_API_TOKEN="HOMEBREW_TOKEN"
 
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
 
-. /usr/local/opt/asdf/libexec/asdf.sh
+. $(brew --prefix)/opt/asdf/libexec/asdf.sh
 
 if type brew &>/dev/null
 then

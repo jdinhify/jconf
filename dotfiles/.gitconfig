@@ -30,7 +30,7 @@
 [push]
 	default = simple
 [user]
-	email = jdinhify@gmail.com
+	email = jd@jdinh.life
 	name = jd
 [init]
 	defaultBranch = main

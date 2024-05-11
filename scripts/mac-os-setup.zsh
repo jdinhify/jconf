@@ -3,9 +3,9 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # cli
-brew install git git-delta trash ranger hub less tig thefuck vim neovim fzf ripgrep jq direnv asdf
+brew install git git-delta trash ranger hub less tig thefuck vim neovim fzf ripgrep fp jq direnv asdf
 # casks
-brew install 1password the-unarchiver appcleaner karabiner-elements visual-studio-code vlc figma hyper google-drive imageoptim obs openshot-video-editor brave-browser bettertouchtool raycast
+brew install 1password the-unarchiver appcleaner karabiner-elements visual-studio-code vlc figma alacritty google-drive imageoptim obs openshot-video-editor brave-browser raycast
 
 # trackpad tap to click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
@@ -104,7 +104,17 @@ curl -fLo ~/.tmux.conf https://raw.githubusercontent.com/jdinhify/jconf/main/dot
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 curl -fLo ~/.vimrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.vimrc
 curl -fLo ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.config-nvim-init.vim
-curl -fLo ~/.config/karabiner/karabiner.json --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/configs/karabiner.json
+curl -fLo ~/.config/karabiner/karabiner.json --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/karabiner.json
 curl -fLo ~/.hyper.js https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.hyper.js
+
+# alacritty
+curl -fLo ~/.config/alacritty/alacritty.toml --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/alacritty/alacritty.toml
+curl -fLo ~/.config/alacritty/theme-gruvbox.toml --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/alacritty/theme-gruvbox.toml
+
+# lazyvim for nvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+curl -fLo ~/.config/nvim/lua/plugins/colorscheme.lua --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/nvim/lua/plugins/colorscheme.lua
+curl -fLo ~/.config/nvim/lazyvim.json --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/nvim/lazyvim.json
 
 curl -fLo ~/Desktop/menumeter.zip https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/zips/MenuMeters_latest.zip

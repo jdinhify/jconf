@@ -29,8 +29,9 @@
 	ff = only
 [push]
 	default = simple
+	autoSetupRemote = true
 [user]
-	email = jd@jdinh.life
+	email = 14046273+jdinhify@users.noreply.github.com
 	name = jd
 [init]
 	defaultBranch = main

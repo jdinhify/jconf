@@ -111,7 +111,7 @@ curl -fLo ~/.config/karabiner/karabiner.json --create-dirs https://raw.githubuse
 curl -fLo ~/.hyper.js https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.hyper.js
 
 # wezterm config
-curl -fLo ~/.wezterm.lua https://raw.githubusercontent.com/jdinhify/jconf/config/.wezterm.lua
+curl -fLo ~/.wezterm.lua https://raw.githubusercontent.com/jdinhify/jconf/main/config/wezterm/.wezterm.lua
 # yazi config
 curl -fLo ~/.config/yazi/yazi.toml --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/yazi/yazi.toml
 

@@ -3,9 +3,12 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # cli
-brew install git git-delta trash ranger hub less tig thefuck vim neovim fzf ripgrep fp jq direnv asdf
+brew install git git-delta trash hub less tig thefuck vim neovim fzf ripgrep fp jq direnv asdf
+# yazi
+brew install yazi ffmpegthumbnailer unar poppler fd zoxide
+brew tap homebrew/cask-fonts && brew install --cask font-symbols-only-nerd-font font-inconsolata
 # casks
-brew install 1password the-unarchiver appcleaner karabiner-elements visual-studio-code vlc figma alacritty google-drive imageoptim obs openshot-video-editor brave-browser raycast
+brew install 1password the-unarchiver appcleaner karabiner-elements visual-studio-code vlc figma google-drive imageoptim obs openshot-video-editor brave-browser raycast wezterm
 
 # trackpad tap to click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
@@ -107,9 +110,10 @@ curl -fLo ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.co
 curl -fLo ~/.config/karabiner/karabiner.json --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/karabiner.json
 curl -fLo ~/.hyper.js https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.hyper.js
 
-# alacritty
-curl -fLo ~/.config/alacritty/alacritty.toml --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/alacritty/alacritty.toml
-curl -fLo ~/.config/alacritty/theme-gruvbox.toml --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/alacritty/theme-gruvbox.toml
+# wezterm config
+curl -fLo ~/.wezterm.lua https://raw.githubusercontent.com/jdinhify/jconf/config/.wezterm.lua
+# yazi config
+curl -fLo ~/.config/yazi/yazi.toml --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/yazi/yazi.toml
 
 # lazyvim for nvim
 git clone https://github.com/LazyVim/starter ~/.config/nvim

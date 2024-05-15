@@ -110,6 +110,9 @@ curl -fLo ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.co
 curl -fLo ~/.config/karabiner/karabiner.json --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/karabiner.json
 curl -fLo ~/.hyper.js https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.hyper.js
 
+# warpd config
+curl -fLo ~/.config/warpd/config --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/config/warpd/config
+
 # wezterm config
 curl -fLo ~/.wezterm.lua https://raw.githubusercontent.com/jdinhify/jconf/main/config/wezterm/.wezterm.lua
 # yazi config

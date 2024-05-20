@@ -27,13 +27,14 @@
 										"optional": ["any"]
 									}
 								},
-								"to": [
+								"to_after_key_up": [
 									{
 										"key_code": "escape"
 									}
 								],
 								"to_if_held_down": [
 									{
+										"halt": true,
 										"key_code": "left_command",
 										"modifiers": ["left_option", "left_shift", "left_control"]
 									}

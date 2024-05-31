@@ -33,7 +33,20 @@ config.colors = {
     "#a89984",
   },
 }
-config.font = wezterm.font("Inconsolata", { bold = false, italic = false })
+
+local font = wezterm.font "Inconsolata"
+config.font = font
+config.font_rules = {
+  {
+    intensity = "Bold",
+    font = font,
+  },
+  {
+    italic = true,
+    font = font,
+  },
+}
+
 config.font_size = 16
 config.line_height = 1.5
 config.default_cursor_style = "SteadyBar"

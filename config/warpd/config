@@ -3,3 +3,13 @@ speed: 260
 max_speed: 3900
 accelerator_acceleration: 3900
 scroll_speed: 650
+screen: z
+grid: b
+left: h, s
+down: j, d
+up: k, f
+right: l, g
+scroll_left: w, y
+scroll_down: e, u
+scroll_up: r, i
+scroll_right: t, o

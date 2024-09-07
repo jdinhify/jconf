@@ -90,6 +90,11 @@ function yy() {
   rm -f -- "$tmp"
 }
 
+function warp-reload() {
+  launchctl unload /Library/LaunchAgents/com.warpd.warpd.plist
+  launchctl load /Library/LaunchAgents/com.warpd.warpd.plist
+}
+
 eval "$(direnv hook zsh)"
 
 eval $(thefuck --alias)

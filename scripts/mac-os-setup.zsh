@@ -99,10 +99,15 @@ defaults write com.apple.universalaccess reduceMotion -int 1
 # disable auto arrange spaces
 defaults write com.apple.dock mru-spaces -int 0
 
-curl -fLo ~/.gitconfig https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.gitconfig
+# custom scripts
+curl -fLo ~/scripts/warpd-reload.zsh --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/scripts/home/scripts/warpd-reload.zsh
+curl -fLo ~/scripts/raycast/warpd-reload --create-dirs https://raw.githubusercontent.com/jdinhify/jconf/main/scripts/home/scripts/raycast/warpd-reload
+
 curl -fLo ~/.zshrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.zshrc
 curl -fLo ~/.bashrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.bashrc
 curl -fLo ~/.bash_profile https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.bash_profile
+
+curl -fLo ~/.gitconfig https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.gitconfig
 curl -fLo ~/.tmux.conf https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.tmux.conf
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 curl -fLo ~/.vimrc https://raw.githubusercontent.com/jdinhify/jconf/main/dotfiles/.vimrc

@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title warpd-reload
+# @raycast.mode compact
+
+. ~/scripts/warpd-reload.zsh
+
+function run() {
+  warpd-reload
+  echo "warpd reloaded"
+}
+
+run

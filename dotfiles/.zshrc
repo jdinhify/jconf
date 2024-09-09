@@ -90,10 +90,7 @@ function yy() {
   rm -f -- "$tmp"
 }
 
-function warp-reload() {
-  launchctl unload /Library/LaunchAgents/com.warpd.warpd.plist
-  launchctl load /Library/LaunchAgents/com.warpd.warpd.plist
-}
+. ~/scripts/warpd-reload.zsh
 
 eval "$(direnv hook zsh)"
 

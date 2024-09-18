@@ -1,11 +1,11 @@
-parseGitDirty() {
+git-parse-dirty() {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo " ✗"
 }
-parseGitStash() {
+git-parse-stash() {
   [[ $(git stash list 2> /dev/null | tail -n1) != "" ]] && echo " ^"
 }
-parseGitBranch() {
-  [[ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" == "true" ]] && echo "[$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')$(parseGitDirty)$(parseGitStash)]"
+git-parse-branch() {
+  [[ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" == "true" ]] && echo "[$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')$(git-parse-dirty)$(git-parse-stash)]"
 }
 
 export HISTFILE="$HOME/.zsh_history"
@@ -26,7 +26,7 @@ esac
 
 setopt PROMPT_SUBST
 NEWLINE=$'\n'
-export PS1='%F{blue}[%t] %F{magenta}%~ %F{cyan}$(parseGitBranch)${NEWLINE}%F{yellow}> %f'
+export PS1='%F{blue}[%t] %F{magenta}%~ %F{cyan}$(git-parse-branch)${NEWLINE}%F{yellow}> %f'
 
 alias f='fuck'
 alias git='hub'
@@ -54,10 +54,14 @@ alias gf='git fetch'
 alias grb='git rebase'
 alias grs='git restore'
 alias gsw='git switch'
+alias git-clean-untracked="git clean -df"
+alias git-reset-upstream="git reset --hard @{u}"
+alias git-list-orphaned-branches='git fetch -p ; git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}"'
+alias git-clean-branches='git fetch -p ; git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -D'
 alias dev='cd ~/dev'
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias clearcache='sudo killall -HUP mDNSResponder'
+alias files-show-hidden='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias files-hide-hidden='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias cache-clear='sudo killall -HUP mDNSResponder'
 alias brew-upgrade="curl -sL https://raw.githubusercontent.com/jdinhify/jconf/main/scripts/brew-upgrade.zsh | zsh /dev/stdin"
 
 alias docker-clean-all='docker images -q | xargs docker rmi'
@@ -81,7 +85,7 @@ then
   compinit
 fi
 
-function yy() {
+yy() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
   yazi "$@" --cwd-file="$tmp"
   if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then

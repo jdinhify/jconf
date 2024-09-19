@@ -51,5 +51,7 @@ config.font_size = 16
 config.line_height = 1.5
 config.default_cursor_style = "SteadyBar"
 
+config.window_close_confirmation = "NeverPrompt"
+
 -- and finally, return the configuration to wezterm
 return config

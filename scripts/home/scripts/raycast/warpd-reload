@@ -8,7 +8,7 @@
 . ~/scripts/warpd-reload.zsh
 
 function run() {
-  warpd-reload
+  warpdReload
   echo "warpd reloaded"
 }
 
